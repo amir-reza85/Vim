@@ -33,19 +33,17 @@ set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
-map <F9> :!clear && g++ % -Wall && echo Compiled Sucsessfuly && echo && echo "I--------------------------------------------------------------------------I" && echo && ./a.exe <CR>
-map <F10> :!clear && ./a.exe <CR>
+map <F9> :!cls && g++ % -Wall && echo Compiled Sucsessfuly && echo && echo "I--------------------------------------------------------------------------I" && echo && a.exe <CR>
+map <F10> :!cls && a.exe <CR>
 map <C-x> :Texplore <CR>
 map <C-RIGHT> :tabn <CR>
 map <C-LEFT> :tabp <CR>
 map <C-k> :tabp <CR>
 map <C-l> :tabn <CR>
-map <F3> :!clear && python3 % <CR>
+map <F3> :!cls && python3 % <CR>
 map <C-h> :set number <CR>
 map <C-j> :set nonumber <CR>
 set undofile
-map <F6> :!clear && kotlinc % -include-runtime -d a.jar && echo Compile Finish && echo && java -jar a.jar <cr>
-map <F7> :!clear && java -jar a.jar <cr>
 let ext = expand('%:e')
 " if ext == "kt"
 " Vim syntax file
