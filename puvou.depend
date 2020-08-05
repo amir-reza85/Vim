@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1596606927 source:c:\users\sony\desktop\puvou\main.cpp
+	<iostream>
+	<graphics.h>
+
